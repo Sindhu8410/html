@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+input { border-style:dotted;
+        border-radius:20px;
+}
+label { font-size:200%;
+         color:brown;
+}
+button { border-radius:20px;
+         border-color:black;
+}
+</style>
+</head>
+<body style="background-color:#a0a0a0;">
+<h1 style="text-align:center;">REGISTRATION FORM</h1>
+<form>
+<label for="Name">Name:</label>
+<input id="Name" name="name"><br><br>
+
+<label for="address">Address:</label>
+<input id="address" name="address"><br><br>
+
+<label for="E-mail">E-mail Address:</label>
+<input id="E-mail" name="E-mail"><br><br>
+
+<label for="user-pw" type="password">Password:</label>
+<input id="user-pw" name="user-pw"><br><br>
+
+<label for="telephone" type="number" >Telephone:</label>
+<input id="telephone" name="telephone"><br><br>
+
+<label for="course">Select Your Course:</label>
+
+
+<select id="course" name="course">
+<option value="bca">BCA</option>
+<option value="b.tech">B.TECH</option>
+<option value="diploma">Diploma</option>
+</select><br><br>
+<label for="comments">Comments:</label>
+
+<textarea id="comments" row="25" cols="100">enter here....</textarea><br><br>
+<section class="submission"> 
+<button onclick="myFunction()">send</button>
+<script>
+function myFunction() {
+alert("Your Registration form is sent.");
+}
+</script>
+</section>
+
+
+
+</form>
+</body>
+</html>
